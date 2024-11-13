@@ -5,10 +5,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import ParticleContainer from "./particle-container";
-import githubdp from "@/public/githubdp.jpg";
+import githubdp from "@/public/githubdp.png";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -34,8 +35,8 @@ export default function Intro() {
             <Image
               src={githubdp}
               alt="Ricardo portrait"
-              width="192"
-              height="192"
+              width="250"
+              height="250"
               quality="95"
               priority={true}
               className="h-50 w-50 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
@@ -52,6 +53,7 @@ export default function Intro() {
               delay: 0.1,
               duration: 0.7,
             }}
+            style={{ 'translate': '-23px' }}
           >
             👋
           </motion.span>
@@ -78,8 +80,15 @@ export default function Intro() {
         }}
       >
         <a
+          className="group bg-gray-950 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-105 transition border-2 border-white border-opacity-40"
+          href="https://wa.me/+15853042152"
+          target="_blank"
+        >
+          WhatsApp <FaWhatsapp className="opacity-70" />
+        </a>
+        <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-105 active:scale-105 transition cursor-pointer borderBlack text-gray-950"
-          href="https://github.com/codecraze25"
+          href="https://github.com/hanahub"
           target="_blank"
         >
           GitHub <FaGithub className="opacity-70" />
@@ -87,7 +96,7 @@ export default function Intro() {
 
         <a
           className="group bg-gray-950 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-105 transition border-2 border-white border-opacity-40"
-          href="https://www.linkedin.com/in/juan-berumen-8329142b3/"
+          href="https://www.linkedin.com/in/juanberumen/"
           target="_blank"
         >
           <span className="opacity-70">LinkedIn</span>
