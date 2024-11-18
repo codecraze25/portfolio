@@ -5,7 +5,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaFile } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import ParticleContainer from "./particle-container";
@@ -81,10 +81,10 @@ export default function Intro() {
       >
         <a
           className="group bg-gray-950 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-105 transition border-2 border-white border-opacity-40"
-          href="https://wa.me/+15853042152"
-          target="_blank"
+          href="/JuanBerumen.pdf"
+          download
         >
-          WhatsApp <FaWhatsapp className="opacity-70" />
+          Resume <FaFile className="opacity-70" />
         </a>
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-105 active:scale-105 transition cursor-pointer borderBlack text-gray-950"

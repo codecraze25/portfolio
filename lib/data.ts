@@ -83,12 +83,13 @@ export const projectsData = [
     title: "Scribble",
     description:
       "I built this project using React. Scribble Together offers a collaborative online whiteboard, ideal for remote tutoring, meetings, and shared note-taking. It supports handwriting, diagram drawing, PDF markup, and works well with iPads and Apple Pencils.",
-    tags: ["TypeScript", "Tailwind CSS", "React", "Stripe"],
+    tags: ["TypeScript", "Tailwind CSS", "React", "Stripe", "AWS"],
     icons: [
       "devicon:typescript",
       "logos:react",
       "devicon:tailwindcss",
       "logos:stripe",
+      "logos:aws",
     ],
     imageUrl: scribbleImg,
     urlLink: "https://scribbletogether.com/",
@@ -97,13 +98,13 @@ export const projectsData = [
     title: "FJALL RAVEN",
     description:
       "I built this project using React. Fjällräven is a Swedish outdoor brand known for its durable, functional, and eco-friendly products, including backpacks, clothing, and accessories. The company emphasizes sustainability, using materials like organic cotton and recycled polyester.",
-    tags: ["TypeScript", "React", "Node.js", "AWS"],
+    tags: ["TypeScript", "React", "ASP.NET", "AWS"],
     icons: [
-      "logos:aws",
+      "logos:azure",
       "devicon:typescript",
       "logos:react",
       "logos:bootstrap",
-      "logos:nodejs-icon",
+      "simple-icons:dotnet",
     ],
     imageUrl: fjallravenImg,
     urlLink: "https://www.fjallraven.com/us/en-us/",
@@ -111,9 +112,15 @@ export const projectsData = [
   {
     title: "Juiced Bikes",
     description:
-      "I built this project using React. Hulk Cars offers car rental services, likely with a focus on integrating blockchain technology for vehicle tokenization. This approach may allow fractional ownership or secure transactions involving car assets.",
-    tags: ["TypeScript", "React", "Node.js", "AWS"],
-    icons: ["logos:shopify"],
+      "I contributed to the Juiced Bikes e-commerce platform using Shopify, creating a user-friendly and responsive website for their innovative electric bikes. Juiced Bikes is known for its high-performance, long-range e-bikes that combine cutting-edge technology with sustainable transportation solutions.",
+    tags: ["Shopify", "Tailwind CSS"],
+    icons: [
+      "logos:shopify",
+      "devicon:tailwindcss",
+      "la:amazon-pay",
+      "logos:mastercard",
+      "cib:apple-pay",
+    ],
     imageUrl: juicedbikesImg,
     urlLink: "https://www.juicedbikes.com/",
   },
@@ -123,11 +130,11 @@ export const projectsData = [
       "I built this project using React. Hulk Cars offers car rental services, likely with a focus on integrating blockchain technology for vehicle tokenization. This approach may allow fractional ownership or secure transactions involving car assets.",
     tags: ["TypeScript", "React", "Node.js", "AWS"],
     icons: [
-      "logos:aws",
-      "devicon:typescript",
       "logos:react",
-      "logos:bootstrap",
-      "logos:nodejs-icon",
+      "logos:w3c",
+      "skill-icons:emotion-light",
+      "logos:highcharts",
+      "simple-icons:godaddy",
     ],
     imageUrl: hulkCars,
     urlLink: "https://hulkcars.com/",
@@ -135,18 +142,30 @@ export const projectsData = [
   {
     title: "Columbia Sportswear",
     description:
-      "Columbia Sportswear's website serves as the central platform for customers to explore and purchase outdoor apparel, footwear, and equipment. The website is designed with a focus on providing a seamless, user-friendly shopping experience that allows customers to browse by category, activity, or new arrivals. It features sections for men, women, and kids, as well as specialized collections like hiking, fishing, and skiing gear. The site also offers a membership program, allowing users to earn rewards and access exclusive discounts. Additionally, it functions as a hub for customer support, store locator services, and Columbia’s sustainability initiatives, showcasing the brand’s commitment to responsible manufacturing and outdoor preservation.",
+      "I contributed to the development of Columbia Sportswear's e-commerce platform using Java, enhancing the online shopping experience for their extensive range of outdoor apparel and equipment. Columbia Sportswear, established in 1938, is renowned for its durable and innovative products, including outerwear, sportswear, footwear, and accessories designed to withstand diverse weather conditions. The company emphasizes advanced technologies like Omni-Heat™ and Omni-Tech™ to provide superior warmth and protection for outdoor enthusiasts.",
     tags: ["Java", "MariaDB", "Swing"],
-    icons: ["logos:java", "logos:mariadb-icon"],
+    icons: [
+      "logos:java",
+      "logos:mariadb-icon",
+      "logos:bootstrap",
+      "cib:apple-pay",
+    ],
     imageUrl: columbiaImg,
     urlLink: "https://www.columbia.com/",
   },
   {
     title: "Albertson",
     description:
-      "I built this project using React. Hulk Cars offers car rental services, likely with a focus on integrating blockchain technology for vehicle tokenization. This approach may allow fractional ownership or secure transactions involving car assets.",
+      "I contributed to the development of Albertsons' e-commerce platform, enhancing the online shopping experience for their extensive range of grocery products. Albertsons is a leading American grocery company, operating numerous stores across the United States, and is committed to providing quality products and services to its customers.",
     tags: ["TypeScript", "React", "Node.js", "AWS"],
-    icons: ["logos:shopify"],
+    icons: [
+      "logos:java",
+      "devicon:angularjs",
+      "devicon:mongodb",
+      "logos:bootstrap",
+      "devicon:okta",
+      "logos:apache",
+    ],
     imageUrl: albertsonImg,
     urlLink: "https://www.albertsons.com/",
   },
@@ -154,16 +173,20 @@ export const projectsData = [
 
 export const skillsData = [
   {
-    name: "JavaScript",
-    icon: "logos:javascript",
-  },
-  {
     name: "TypeScript",
     icon: "logos:typescript-icon",
   },
   {
     name: "React",
     icon: "logos:react",
+  },
+  {
+    name: "Angular",
+    icon: "devicon:angular",
+  },
+  {
+    name: "Vue",
+    icon: "devicon:vuejs",
   },
   {
     name: "Node.js",
@@ -178,24 +201,20 @@ export const skillsData = [
     icon: "logos:laravel",
   },
   {
-    name: "Symfony",
-    icon: "logos:symfony",
-  },
-  {
     name: "Python",
     icon: "logos:python",
+  },
+  {
+    name: "Django",
+    icon: "logos:django-icon",
   },
   {
     name: "Java",
     icon: "logos:java",
   },
   {
-    name: "HTML",
-    icon: "vscode-icons:file-type-html",
-  },
-  {
-    name: "CSS",
-    icon: "vscode-icons:file-type-css",
+    name: "Spring Boot",
+    icon: "logos:spring-icon",
   },
   {
     name: "SCSS",
@@ -208,6 +227,10 @@ export const skillsData = [
   {
     name: "MySQL",
     icon: "logos:mysql",
+  },
+  {
+    name: "MongoDB",
+    icon: "devicon:mongodb",
   },
   {
     name: "Linux",
